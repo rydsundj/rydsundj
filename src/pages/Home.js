@@ -25,6 +25,8 @@ const Home = ({isDarkMode}) => {
       description: 'Not X. React app. Under construction.',
       link: 'https://rydsundj.github.com/y',
     },
+    
+    
   ];
 
   return (
