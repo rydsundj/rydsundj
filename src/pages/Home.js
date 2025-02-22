@@ -10,7 +10,7 @@ const Home = ({isDarkMode}) => {
       link: 'https://github.com/rydsundj',
     },
     {
-      title: 'EquityTracker',
+      title: 'TickerTracker',
       description: 'Search for a ticker and see graphs, values and option contracts.\\Data and algo done, visuals under construction.',
       link: 'https://equitytracker.netlify.app/',
     },
@@ -30,28 +30,26 @@ const Home = ({isDarkMode}) => {
   return (
     <div style={{ display: 'flex', width: '96%' }}>
       <div style={{ flex: 1, padding: '1rem' }}>
-      <div style={{ 
-          backgroundColor: '#4D4D4D ', 
-          borderRadius: '10px', 
-          padding: '1rem', 
-          height: '30%', 
-          marginLeft: '6rem',
-        }}>
-          {<p>hello.</p>
-          }
-                    {<p>welcome to my portfolio.</p>
-          }
-                              {<p>currently working on how to showcase and host my projects.</p>
-          }
+        <div style={{ 
+            backgroundColor: 'rgba(77, 77, 77, 0.9)', 
+            borderRadius: '10px', 
+            padding: '1rem', 
+            height: '30%', 
+            marginLeft: '6rem',
+            color: "white"
+          }}>
+          <p>hello.</p>
+          <p>welcome to my portfolio.</p>
+          <p>currently working on how to showcase and host my projects.</p>
           <p>feel free to check out my github or the current working projects --></p>
           <p>check back soon for updates.</p>
         </div>
       </div>
-      <div style={{ flex: 1}}>
+      <div style={{ flex: 1 }}>
         <main 
           style={{ 
             gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-            gap: '1rem' ,
+            gap: '1rem',
             color: isDarkMode ? 'white' : 'black',
           }}
         >
