@@ -1,32 +1,12 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
-import { motion } from 'framer-motion'; 
 
 const Home = ({isDarkMode}) => {
   const projects = [
-    {
-      title: 'GitHub projects',
-      description: 'A mix of personal and school projects. Some may require setup to run.',
-      link: 'https://github.com/rydsundj',
-    },
-    {
-      title: 'TickerTracker',
-      description: 'Search for a ticker and see graphs, values and option contracts.\\Data and algo done, visuals under construction.',
-      link: 'https://equitytracker.netlify.app/',
-    },
-
-    {
-      title: 'AH-El Entrepenad',
-      description: 'Static website for electrician organization. Done.',
-      link: 'https://ah-el.se',
-    },
-    {
-      title: 'Y',
-      description: 'Not X. React app. Under construction.',
-      link: 'https://rydsundj.github.com/y',
-    },
-    
-    
+    { title: 'GitHub projects', description: 'A mix of personal and school projects. Some may require setup to run.', link: 'https://github.com/rydsundj' },
+    { title: 'SP500SUM', description: 'Search for a ticker and see info, graphs and option contracts.\\Data and algorithms done, visuals still under construction.', link: 'https://sp500sum-lkk7.vercel.app/' },
+    { title: 'AH-El Entrepenad', description: 'Static website for electrician organization. Done.', link: 'https://ah-el.se' },
+    { title: 'Y', description: 'Not X. React app. Under construction.', link: 'https://rydsundj.github.com/y' },
   ];
 
   return (
@@ -56,20 +36,12 @@ const Home = ({isDarkMode}) => {
           }}
         >
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}  
-              animate={{ opacity: 1, y: 0 }}   
-              transition={{ duration: 0.6, delay: index * 0.2 }}  
-              className="project-card-container"
-            >
               <ProjectCard 
                 title={project.title} 
                 description={project.description} 
                 link={project.link} 
                 isDarkMode={isDarkMode}
               />
-            </motion.div>
           ))}
         </main>
       </div>
