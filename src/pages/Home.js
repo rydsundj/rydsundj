@@ -44,9 +44,10 @@ const Home = ({isDarkMode}) => {
               />
           ))}
         </main>
+        
       </div>
     </div>
-    
+
   );
 };
 
