@@ -1,0 +1,44 @@
+.home-container {
+max-width: 1200px;
+margin: auto;
+padding: 2rem;
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 2rem;
+}
+
+.intro-box {
+background: rgba(255, 255, 255, 0.85);
+padding: 2rem;
+border-radius: 1rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+color: black;
+transition: all 0.3s ease-in-out;
+}
+
+.intro-box.dark {
+background: rgba(0, 0, 0, 0.7);
+color: white;
+}
+
+.intro-box h1 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 1.5rem;
+align-items: start;
+}
+
+@media (max-width: 768px) {
+.home-container {
+grid-template-columns: 1fr;
+}
+
+.intro-box {
+margin-bottom: 2rem;
+}
+}
