@@ -9,6 +9,7 @@ const Home = ({ isDarkMode }) => {
     { title: "SP500SUM", description: "Search for a ticker and see info, graphs and option contracts. Visuals still under construction.", link: "https://sp500sum-lkk7.vercel.app/" },
     { title: "AH-El Entrepenad", description: "Static website for electrician organization.", link: "https://ah-el.se" },
     { title: "Y", description: "Not X. React app. Under construction.", link: "https://y-ten-dun.vercel.app/" },
+    { title: "Nucleo-144 Embedded Projects", description: "Not done.", link: "https://rydsundj.github.io/rydsundj/" },
   ];
       
   return (
@@ -16,9 +17,9 @@ const Home = ({ isDarkMode }) => {
       <section className={`intro-box ${isDarkMode ? "dark" : ""}`}>
         <h1>hello.</h1>
         <p>welcome to my portfolio.</p>
-        <p>currently working on how to showcase and host my projects.</p>
-        <p>feel free to check out my github or the current working projects ↓</p>
-        <p>check back soon for updates.</p>
+        <p>not all projects are ready to be shown here.</p>
+        <p>feel free to check out my github or the current working shown here --></p>
+        <p>check back soon for more updates.</p>
       </section>
 
       <main className="projects-grid">
