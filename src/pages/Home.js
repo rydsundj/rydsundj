@@ -8,9 +8,9 @@ const Home = ({ isDarkMode }) => {
     { title: "GitHub projects", description: "A mix of personal and school projects. Some may require setup to run.", link: "https://github.com/rydsundj" },
     { title: "SP500SUM", description: "Search for a ticker and see info, graphs and option contracts. Visuals still under construction.", link: "https://sp500sum-lkk7.vercel.app/" },
     { title: "AH-El Entrepenad", description: "Static website for electrician organization.", link: "https://ah-el.se" },
-    { title: "Y", description: "Not X. React app. Under construction.", link: "https://rydsundj.github.com/y" },
+    { title: "Y", description: "Not X. React app. Under construction.", link: "https://y-ten-dun.vercel.app/" },
   ];
-
+      
   return (
     <div className="home-container">
       <section className={`intro-box ${isDarkMode ? "dark" : ""}`}>
