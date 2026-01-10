@@ -6,10 +6,10 @@ import "./Home.css";
 const Home = ({ isDarkMode }) => {
   const projects = [
     { title: "GitHub projects", description: "A mix of personal and school projects. Some may require setup to run.", link: "https://github.com/rydsundj" },
-    { title: "SP500SUM", description: "Search for a ticker and see info, graphs and option contracts. Visuals still under construction.", link: "https://sp500sum-lkk7.vercel.app/" },
+    { title: "SP500SUM", description: "Search for a ticker and see info, graphs and option contracts. Under construction.", link: "https://sp500sum-lkk7.vercel.app/" },
     { title: "AH-El Entrepenad", description: "Static website for electrician organization.", link: "https://ah-el.se" },
-    { title: "Y", description: "Not X. React app. Under construction.", link: "https://y-ten-dun.vercel.app/" },
-    { title: "Nucleo-144 Embedded Projects", description: "Not done.", link: "https://rydsundj.github.io/rydsundj/" },
+    { title: "Y", description: "React app. Under construction.", link: "https://y-ten-dun.vercel.app/" },
+    { title: "Mini-RTOS for Nucleo-144", description: "Under construction.", link: "https://github.com/rydsundj/mini-RTOS" },
   ];
       
   return (
@@ -17,8 +17,6 @@ const Home = ({ isDarkMode }) => {
       <section className={`intro-box ${isDarkMode ? "dark" : ""}`}>
         <h1>hello.</h1>
         <p>welcome to my portfolio.</p>
-        <p>not all projects are ready to be shown here.</p>
-        <p>feel free to check out my github or the current working shown here --></p>
         <p>check back soon for more updates.</p>
       </section>
 
